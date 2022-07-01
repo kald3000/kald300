@@ -5,14 +5,13 @@ dnspython
 ffmpeg-python
 future
 git+https://github.com/kaalmous/downloader@kaal
-motor
+git+https://github.com/mradityahalder/kaal_search@master
+git+https://github.com/mradityahalder/kaal-search-python@main
 pillow
 psutil
 pyrogram==1.4.16
-py-tgcalls
+py-tgcalls==0.8.6
 python-dotenv
 requests
 tgcrypto
 wget
-youtube-search
-youtube-search-python
