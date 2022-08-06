@@ -89,7 +89,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"تم تطوير بواسطة: سورس فريدوم (@rr8r9)",
+        f"Powered By: bm (@xl444)",
         (255, 255, 255),
         font=font,
     )
@@ -141,12 +141,12 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅٛعةه ݪݪتشغيݪ ❤️‍🔥.** ")
+                        f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅعةه ݪݪتشغيݪ ❤️‍🔥.** ")
     try:
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅٛعةه ݪݪتشغيݪ ❤️‍🔥.*")
+            f"**عݪيك اެضاެفةه حساެب اެݪمساެعد في اެݪمجمۅعةه ݪݪتشغيݪ ❤️‍🔥.*")
         return
     
     audio = (
@@ -159,7 +159,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅٛقت اެݪمحدد:  {DURATION_LIMIT} ❤️‍🔥.**"
+                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅٛقت اެݪمحدد: {DURATION_LIMIT} ❤️‍🔥.**"
             )
 
         file_name = get_file_name(audio)
@@ -237,7 +237,7 @@ async def play(_, message: Message):
 
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅٛقت اެݪمحدد: {DURATION_LIMIT} ❤️‍🔥.**"
+                f"**تجاެۅٛࢪ࣪ اެݪاެغنيةه اެݪۅقت اެݪمحدد: {DURATION_LIMIT} ❤️‍🔥.**"
             )
             return
         requested_by = message.from_user.first_name
@@ -248,7 +248,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "**اެݪࢪجاެ۽ اެݪࢪد عݪى مݪف صۅٛتي اެۅٛ اެعطاެ۽ شي ݪݪبحث🦴.**"
             )
-        await lel.edit("**جاެࢪي اެݪتشغيݪ ❤️‍🔥**")
+        await lel.edit("جاެࢪي اެݪبحث❤️‍🔥.")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -270,7 +270,6 @@ async def play(_, message: Message):
             for i in range(len(dur_arr) - 1, -1, -1):
                 dur += int(dur_arr[i]) * secmul
                 secmul *= 60
-
         except Exception as e:
             await lel.edit(
                 "**ݪم يتم اެݪعثۅٛࢪ عݪى اެغنيةه جࢪب اެࢪساެݪ ࢪاެبط اެݪاެغنيةه ❤️‍🔥.**"
@@ -322,7 +321,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**تم حبي ذۅٛقك حݪۅٛ بـ اެݪاެغاެني ۅٛهاެي شغݪتهاެ تدݪݪ ❤️‍🔥.**".format(),
+            caption="**تم حبي ذۅقك حݪۅ بـ اެݪاެغاެني ۅهاެي شغݪتهاެ تدݪݪ ❤️‍🔥.**".format(),
            )
 
     os.remove("final.png")
@@ -362,7 +361,7 @@ async def skip(_, message: Message):
     for x in clientbot.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("**ݪك مۅٛ تدݪݪ ياެمطۅٛࢪنةه خاެدم ۅٛممنۅٛن ❤️‍🔥.**")
+        await message.reply_text("**ݪك مۅٛ تدݪݪ ياެمطۅࢪنةه خاެدم ۅممنۅن ❤️‍🔥.**")
     else:
         queues.task_done(chat_id)
         
@@ -381,7 +380,7 @@ async def skip(_, message: Message):
 
     await message.reply_photo(
                              photo="https://te.legra.ph/file/ff43de16d318f461088c7.jpg", 
-                             caption=f'**ݪاެ مۅٛ جاެنت حݪۅٛه ݪيش سۅٛيت تخطي بس تم تدݪݪ ❤️‍🔥.**'
+                             caption=f'**ݪاެ مۅٛ جاެنت حݪۅٛه ݪيش سۅيت تخطي بس تم تدݪݪ ❤️‍🔥.**'
    ) 
 
 
@@ -397,7 +396,7 @@ async def stop(_, message: Message):
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/ff43de16d318f461088c7.jpg", 
-                             caption="**ياެغبي تࢪاެ ماެكۅٛ شي مشتغݪ حتى اެتخطاެه شبيك❤️‍🔥🩴.**"
+                             caption="**ياެغبي تࢪاެ ماެكۅ شي مشتغݪ حتى اެتخطاެه شبيك❤️‍🔥🩴.**"
     )
 
 
