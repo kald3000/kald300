@@ -328,21 +328,14 @@ async def play(_, message: Message):
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["/الاوامر", "الاوامر"]) & other_filters)
+@Client.on_message(commandpro(["/توقف", "الان"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
     await message.reply_photo(
                              photo="https://te.legra.ph/file/402c519808f75bd9b1803.jpg", 
-                             caption="**اولا شكرا لمطوري ، هذي الاوامر يعمري 
-
-شغل - بالرد على ملف صوتي او اسم الاغنية
-كافي - لايقاف الاغنية من المكالمة
-تحديث - لتحديث بيانات السورس 
-التالي - لتخطي اغنية من المكالمة 
-
-توجد اوامر سرية - دعنا نتعرف عليها [هنا](https://t.me/RR3R2) **"
+                             caption="**تم الإيقاف مؤقتا ،  **"
     )
 
 
