@@ -33,25 +33,17 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
-        caption=f"""**━━━━━━━━━━━━━━━━━━━━━━━━
-💥 ʜᴇʟʟᴏ, ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ
-ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs ...
-┏━━━━━━━━━━━━━━━━━┓
-┣★ ᴄʀᴇᴀᴛᴏʀ : [ᴀᴅɪᴛʏᴀ ʜᴀʟᴅᴇʀ](https://t.me/adityahalder)
-┣★ ᴜᴘᴅᴀᴛᴇs : [ᴀᴅɪᴛʏᴀ sᴇʀᴠᴇʀ](https://t.me/adityaserver)
-┣★ sᴜᴘᴘᴏʀᴛ : [ᴀᴅɪᴛʏᴀ ᴅɪsᴄᴜs](https://t.me/adityadiscus)
-┣★ sᴏᴜʀᴄᴇ › : [ɢᴇᴛ ʀᴇᴘᴏ ʜᴇʀᴇ](https://github.com/mradityaxd/adityaplayer)
-┗━━━━━━━━━━━━━━━━━┛
+        photo=f"https://te.legra.ph/file/4807752a011965b771900.jpg",
+        caption=f"""**ياެެهݪاެެ 🫂.
 
-💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ
-ᴅᴍ ᴛᴏ ᴍʏ [ʟᴇɢᴇɴᴅ ᴏᴡɴᴇʀ](https://t.me/adityahalder) ...
-━━━━━━━━━━━━━━━━━━━━━━━━**""",
+ياެެعيۅني اެެني بۅت بسيط مقدم من مطۅࢪي يمديني اެެشغݪ اެެغاެެني بمجمۅعتك👍🏻.
+
+حتى تعࢪف اެۅاެمࢪي ۅٛكيف اެشتغݪ اެࢪسݪ باެݪمجمۅعةه اެݪاެۅاެمࢪ 🐍.**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴊᴏɪɴ ʜᴇʀᴇ ғᴏʀ ᴜᴘᴅᴀᴛᴇs ❱ ➕", url=f"https://t.me/adityaserver")
+                        "➕ ݪاެتتࢪد باެضاެفتي اެݪى مجمۅعتك ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
                 ]
                 
            ]
@@ -62,29 +54,29 @@ async def start_(client: Client, message: Message):
 @Client.on_message(commandpro(["/start", "/alive", "aditya"]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+        photo=f"https://te.legra.ph/file/6111837a4b2586e21e96c.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴊᴏɪɴ ʜᴇʀᴇ ᴀɴᴅ sᴜᴘᴘᴏʀᴛ 💞", url=f"https://t.me/adityadiscus")
+                        "البوت يعمل بنجاح 👍🏻.", url=f"https://t.me/xl444")
                 ]
             ]
         ),
     )
 
 
-@Client.on_message(commandpro(["repo", "#repo", "@repo", "/repo", "source"]) & filters.group & ~filters.edited)
+@Client.on_message(commandpro(["السورس", "source"]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/c6e1041c6c9a12913f57a.png",
+        photo=f"https://te.legra.ph/file/6111837a4b2586e21e96c.jpg",
         caption=f"""""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "💥 ᴄʟɪᴄᴋ ᴍᴇ ᴛᴏ ɢᴇᴛ ʀᴇᴘᴏ 💞", url=f"https://github.com/mradityaxd/adityaplayer")
+                        "👍🏻مطۅࢪ اެݪسۅٛࢪس", url=f"https://t.me/RR8R9")
                 ]
             ]
         ),
