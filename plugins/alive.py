@@ -33,8 +33,8 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/466de30ee0f9383c8e09e.jpg",
-        caption=f"""**هݪاެ حيݪي 🤍.
+        photo=f"https://te.legra.ph/file/5fdd8da2461c05d893189.jpg",
+        caption=f"""**هݪاެ حيݪي 🤎.
 
 اެناެ بۅت اެغاެني بمميࢪ࣪اެت حݪۅةه ، بدۅن مقدماެت ضيفني ࢪاެح اެعجبك 💪🏻.**""",
     reply_markup=InlineKeyboardMarkup(
