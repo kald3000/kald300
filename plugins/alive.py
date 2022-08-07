@@ -36,12 +36,12 @@ async def start_(client: Client, message: Message):
         photo=f"https://te.legra.ph/file/5fdd8da2461c05d893189.jpg",
         caption=f"""**هݪاެ حيݪي 🤎.
 
-اެناެ بۅت اެغاެني بمميࢪ࣪اެت حݪۅةه ، بدۅن مقدماެت ضيفني ࢪاެح اެعجبك 💪🏻.**""",
+اެناެ بۅت اެغاني ، بدۅن مقدماެت ضيفني ࢪاެح اެعجبك 🤎.**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🥇 اضفني الى مجموعتك 🥇", url=f"https://t.me/@rr8r9")
+                        " 𝗌𝗈!𝗇g .", url=f"https://t.me/vvyvv6")
                 ]
                 
            ]
