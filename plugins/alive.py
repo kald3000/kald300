@@ -43,7 +43,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ݪاެتتࢪد باެضاެفتي اެݪى مجمۅعتك ➕", url=f"https://t.me/{me_bot.username}?startgroup=true")
+                        "➕ ݪاެتتࢪد باެضاެفتي اެݪى مجمۅعتك ➕", url=f"https://t.me/rr8r9")
                 ]
                 
            ]
