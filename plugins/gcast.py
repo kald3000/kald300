@@ -7,7 +7,7 @@ from pyrogram.errors import UserAlreadyParticipant
 from modules.clientbot.clientbot import client as aditya
 from modules.config import SUDO_USERS
 
-@Client.on_message(filters.command(["gcast", "اذاعة", "send"]))
+@Client.on_message(filters.command(["gcast", "ارسال", "اذاعة"]))
 async def broadcast(_, message: Message):
     sent=0
     failed=0
