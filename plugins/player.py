@@ -173,8 +173,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
-                            url=f"https://t.me/rr8r9")
+                            text="𝖲𝗈𝗇!g .",
+                            url=f"https://t.me/VVYVV6")
 
                 ]
             ]
@@ -212,8 +212,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
-                            url=f"https://t.me/rr8r9")
+                            text=" 𝖲𝗈𝗇!g .",
+                            url=f"https://t.me/VVYVV6")
 
                 ]
             ]
@@ -228,7 +228,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
+                            text=" 𝖲𝗈𝗇!g .",
                             url=f"https://t.me/rr8r9")
 
                 ]
@@ -281,8 +281,8 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
-                            url=f"https://t.me/rr8r9")
+                            text=" 𝖲𝗈𝗇!g .",
+                            url=f"https://t.me/VVYVV6")
 
                 ]
             ]
