@@ -41,7 +41,7 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🥇 اضفني الى مجموعتك 🥇", url=f"https://t.me/@البوت يعمل")
+                        "🥇 اضفني الى مجموعتك 🥇", url=f"https://t.me/@rr8r9")
                 ]
                 
            ]
