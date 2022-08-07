@@ -328,8 +328,7 @@ async def play(_, message: Message):
     return await lel.delete()
     
     
-@Client.on_message(commandpro(["/توقف", "الان"]) & other_filters)
-@errors
+@Client.on_message(commandpro(["/مؤقت", "مؤقتا"]) & other_filters)
 @authorized_users_only
 async def pause(_, message: Message):
     await clientbot.pytgcalls.pause_stream(message.chat.id)
@@ -340,7 +339,6 @@ async def pause(_, message: Message):
 
 
 @Client.on_message(commandpro(["/resume", "استمرار"]) & other_filters)
-@errors
 @authorized_users_only
 async def resume(_, message: Message):
     await clientbot.pytgcalls.resume_stream(message.chat.id)
@@ -352,7 +350,6 @@ async def resume(_, message: Message):
 
 
 @Client.on_message(commandpro(["/تخطي", "تخ", "التالي", "/s"]) & other_filters)
-@errors
 @authorized_users_only
 async def skip(_, message: Message):
     global que
@@ -385,7 +382,6 @@ async def skip(_, message: Message):
 
 
 @Client.on_message(commandpro(["/ايقاف", "/e", "/اوكف", "كافي", "x"]) & other_filters)
-@errors
 @authorized_users_only
 async def stop(_, message: Message):
     try:
@@ -401,7 +397,6 @@ async def stop(_, message: Message):
 
 
 @Client.on_message(commandpro(["تحديث", "refresh"]))
-@errors
 @authorized_users_only
 async def admincache(client, message: Message):
     set(
