@@ -303,7 +303,7 @@ async def play(_, message: Message):
     if int(chat_id) in ACTV_CALLS:
         position = await queues.put(chat_id, file=file_path)
         await message.reply_photo(
-            photo="final.png",
+            photo="https://te.legra.ph/file/e9667fc76b311f97fa0e3.jpg",
             caption="**ݪك عاެشش تم اެضاެف اެݪاެغنيةه اެݪى قاެئمةه اެݪاެنتضاެࢪ ࢪقم » `{}` ❤️‍🔥.**".format(position),
             reply_markup=keyboard,
         )
@@ -349,7 +349,7 @@ async def resume(_, message: Message):
 
 
 
-@Client.on_message(commandpro(["/تخطي", "تخ", "التالي", "/s"]) & other_filters)
+@Client.on_message(commandpro(["تخطي", "تخ", "ت", "/s"]) & other_filters)
 @authorized_users_only
 async def skip(_, message: Message):
     global que
@@ -391,7 +391,7 @@ async def stop(_, message: Message):
 
     await clientbot.pytgcalls.leave_group_call(message.chat.id)
     await message.reply_photo(
-                             photo="https://te.legra.ph/file/ff43de16d318f461088c7.png", 
+                             photo="https://te.legra.ph/file/e9667fc76b311f97fa0e3.jpg", 
                              caption="**ݪك مۅ تدݪݪ ياެمطۅࢪنةه خاެدم ۅممنۅن ❤️‍🔥..**"
     )
 
