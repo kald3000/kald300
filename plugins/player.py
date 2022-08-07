@@ -173,7 +173,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ ❤️‍🔥.",
+                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
                             url=f"https://t.me/rr8r9")
 
                 ]
@@ -212,7 +212,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ ❤️‍🔥.",
+                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
                             url=f"https://t.me/rr8r9")
 
                 ]
@@ -228,7 +228,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ ❤️‍🔥.",
+                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
                             url=f"https://t.me/rr8r9")
 
                 ]
@@ -281,7 +281,7 @@ async def play(_, message: Message):
             [
                 [
                         InlineKeyboardButton(
-                            text="قناެةه اެݪمطۅٛࢪ ❤️‍🔥.",
+                            text="قناެةه اެݪمطۅٛࢪ 🩸.",
                             url=f"https://t.me/rr8r9")
 
                 ]
@@ -319,12 +319,12 @@ async def play(_, message: Message):
             )
 
         await message.reply_photo(
-            photo="final.png",
+            photo="https://te.legra.ph/file/407ce4c57a645c11f65c0.png",
             reply_markup=keyboard,
             caption="**تم حبي ذۅقك حݪۅ بـ اެݪاެغاެني ۅهاެي شغݪتهاެ تدݪݪ ❤️‍🔥.**".format(),
            )
 
-    os.remove("final.png")
+    os.remove("https://te.legra.ph/file/407ce4c57a645c11f65c0.png")
     return await lel.delete()
     
     
