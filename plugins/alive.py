@@ -33,15 +33,15 @@ async def _human_time_duration(seconds):
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/cd5c96a3c7e8ae1913ef3.jpg",
-        caption=f"""**ياެެهݪاެެ 🫂.
+        photo=f"https://te.legra.ph/file/466de30ee0f9383c8e09e.jpg",
+        caption=f"""**هݪاެ حيݪي 🤍.
 
-ياެެعيۅني اެެني بۅت بسيط مقدم من مطۅࢪي يمديني اެެشغݪ اެެغاެެني بمجمۅعتك👍🏻.**""",
+اެناެ بۅت اެغاެني بمميࢪ࣪اެت حݪۅةه ، بدۅن مقدماެت ضيفني ࢪاެح اެعجبك 💪🏻.**""",
     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ݪاެتتࢪد باެضاެفتي اެݪى مجمۅعتك ➕", url=f"https://t.me/@rr8r9")
+                        "🥇 اضفني الى مجموعتك 🥇", url=f"https://t.me/@البوت يعمل")
                 ]
                 
            ]
